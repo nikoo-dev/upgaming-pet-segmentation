@@ -1,0 +1,196 @@
+{
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+  "manifest_sha256": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+  "per_image_csv_sha256": "3f93e25461f1bfb03dc0562a138985f47e5e9cccecbbbdd809501eb4309e5dd3",
+  "selection_rule": "Inspect predeclared six worst cases, then next fourteen saved-rank cases (ranks 7-20) after annotation inconsistencies were observed. Ascending saved (foreground IoU, image ID); no scores recomputed.",
+  "scope": "Descriptive annotation/prediction inspection only; official scores and model/deployment settings unchanged.",
+  "examples": [
+    {
+      "saved_rank": 1,
+      "id": "Egyptian_Mau_20",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 3110400
+      }
+    },
+    {
+      "saved_rank": 2,
+      "id": "Maine_Coon_268",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "1": 35195,
+        "2": 142420,
+        "3": 9885
+      }
+    },
+    {
+      "saved_rank": 3,
+      "id": "Persian_259",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 165910
+      }
+    },
+    {
+      "saved_rank": 4,
+      "id": "Persian_268",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "1": 22031,
+        "2": 48161,
+        "3": 12058
+      }
+    },
+    {
+      "saved_rank": 5,
+      "id": "Persian_273",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "1": 82128,
+        "2": 30646,
+        "3": 23901
+      }
+    },
+    {
+      "saved_rank": 6,
+      "id": "japanese_chin_199",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 187500
+      }
+    },
+    {
+      "saved_rank": 7,
+      "id": "keeshond_7",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 166500
+      }
+    },
+    {
+      "saved_rank": 8,
+      "id": "saint_bernard_60",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 187500
+      }
+    },
+    {
+      "saved_rank": 9,
+      "id": "saint_bernard_78",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 187500
+      }
+    },
+    {
+      "saved_rank": 10,
+      "id": "wheaten_terrier_195",
+      "saved_foreground_iou": 0.0,
+      "raw_annotation_label_counts": {
+        "2": 165000
+      }
+    },
+    {
+      "saved_rank": 11,
+      "id": "British_Shorthair_8",
+      "saved_foreground_iou": 0.0029721168511204097,
+      "raw_annotation_label_counts": {
+        "1": 25571,
+        "2": 35927,
+        "3": 11782
+      }
+    },
+    {
+      "saved_rank": 12,
+      "id": "Bombay_75",
+      "saved_foreground_iou": 0.01171083913005195,
+      "raw_annotation_label_counts": {
+        "1": 22595,
+        "2": 31723,
+        "3": 10482
+      }
+    },
+    {
+      "saved_rank": 13,
+      "id": "pug_68",
+      "saved_foreground_iou": 0.10265261627906977,
+      "raw_annotation_label_counts": {
+        "1": 5504,
+        "2": 152946,
+        "3": 8050
+      }
+    },
+    {
+      "saved_rank": 14,
+      "id": "pomeranian_193",
+      "saved_foreground_iou": 0.10951944698925627,
+      "raw_annotation_label_counts": {
+        "1": 11432,
+        "2": 48856,
+        "3": 7212
+      }
+    },
+    {
+      "saved_rank": 15,
+      "id": "Bengal_24",
+      "saved_foreground_iou": 0.17559779748687604,
+      "raw_annotation_label_counts": {
+        "1": 13948,
+        "2": 159696,
+        "3": 13856
+      }
+    },
+    {
+      "saved_rank": 16,
+      "id": "Bombay_58",
+      "saved_foreground_iou": 0.18525202501364,
+      "raw_annotation_label_counts": {
+        "1": 47592,
+        "2": 118767,
+        "3": 21141
+      }
+    },
+    {
+      "saved_rank": 17,
+      "id": "miniature_pinscher_5",
+      "saved_foreground_iou": 0.18953934740882916,
+      "raw_annotation_label_counts": {
+        "1": 3883,
+        "2": 178451,
+        "3": 5166
+      }
+    },
+    {
+      "saved_rank": 18,
+      "id": "Bombay_36",
+      "saved_foreground_iou": 0.2134399429604543,
+      "raw_annotation_label_counts": {
+        "1": 8382,
+        "2": 172455,
+        "3": 6663
+      }
+    },
+    {
+      "saved_rank": 19,
+      "id": "Sphynx_94",
+      "saved_foreground_iou": 0.22532155099216958,
+      "raw_annotation_label_counts": {
+        "1": 10082,
+        "2": 182562,
+        "3": 24356
+      }
+    },
+    {
+      "saved_rank": 20,
+      "id": "Abyssinian_226",
+      "saved_foreground_iou": 0.239014783364878,
+      "raw_annotation_label_counts": {
+        "1": 9345,
+        "2": 52649,
+        "3": 5506
+      }
+    }
+  ]
+}

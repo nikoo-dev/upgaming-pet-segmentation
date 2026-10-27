@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-26T19:44:30.230020+00:00",
+  "scope": "Read-only identity, saved metric arithmetic, official CSV coverage, and existing QA/wheel evidence audit. No training, inference, selection, benchmark, or test evaluation rerun.",
+  "passed": true,
+  "freeze_hash_checks": {
+    "checkpoint_sha256": true,
+    "manifest_sha256": true,
+    "decision_sha256": true,
+    "selection_sha256": true,
+    "execution_protocol_sha256": true
+  },
+  "runs": [
+    {
+      "experiment": "A",
+      "epochs_completed": 12,
+      "global_step": 6000,
+      "best_iou": 0.802834416001103
+    },
+    {
+      "experiment": "B",
+      "epochs_completed": 12,
+      "global_step": 6000,
+      "best_iou": 0.8877052514913534
+    },
+    {
+      "experiment": "C",
+      "epochs_completed": 12,
+      "global_step": 6000,
+      "best_iou": 0.8883932957906522
+    }
+  ],
+  "selected_experiment": "C",
+  "deployment_resolution": 256,
+  "test": {
+    "rows": 3669,
+    "unique_ids": 3669,
+    "ids_match_official_manifest": true,
+    "breed_species_match": true,
+    "matrix_scores_match": true,
+    "valid_pixels": 575035253,
+    "ignored_pixels": 79778469,
+    "model_data_decision_match_freeze": true
+  },
+  "browser_qa": {
+    "scenarios": 9,
+    "downloads_hash_verified": 9,
+    "screenshots_hash_verified": 9,
+    "passed": true
+  },
+  "second_environment": {
+    "all_commands_exit_zero": true,
+    "wheel_hash_matches": true,
+    "wheel_package_source_matches_current": true,
+    "saved_prediction_outputs_exactly_equal": true
+  },
+  "remaining": "Root will generate final package and verify extraction with current documentation."
+}

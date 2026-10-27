@@ -1,0 +1,2 @@
+# Preserve exact bytes: model, split and decision provenance uses SHA-256.
+* -text

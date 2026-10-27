@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "executed_at_utc": "2026-10-24T12:45:57.001Z",
+  "scope": "Real Edge browser against the unmodified Streamlit application and actual selected trained weights; no model substitution.",
+  "browser": {
+    "engine": "Chromium",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "headless": true,
+    "version": "149.0.4022.80"
+  },
+  "scenarios": [
+    {
+      "name": "pet_default",
+      "passed": true,
+      "input": {
+        "path": "D:\\niko\\ML assigment\\artifacts\\qualitative\\inputs\\chelsea.png",
+        "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb"
+      },
+      "panels": [
+        {
+          "width": 451,
+          "height": 300,
+          "alt": ""
+        },
+        {
+          "width": 451,
+          "height": 300,
+          "alt": ""
+        },
+        {
+          "width": 451,
+          "height": 300,
+          "alt": ""
+        },
+        {
+          "width": 451,
+          "height": 300,
+          "alt": ""
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "source": "D:\\niko\\ML assigment\\artifacts\\qualitative\\inputs\\chelsea.png",
+        "source_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+        "width": 451,
+        "height": 300,
+        "mask_values": [
+          0,
+          255
+        ],
+        "foreground_fraction": 0.7956762749445676,
+        "replacement_color": [
+          80,
+          160,
+          240
+        ],
+        "files": [
+          {
+            "role": "mask",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_mask.png",
+            "sha256": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+            "bytes": 1055,
+            "width": 451,
+            "height": 300
+          },
+          {
+            "role": "overlay",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_overlay.png",
+            "sha256": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+            "bytes": 192621,
+            "width": 451,
+            "height": 300
+          },
+          {
+            "role": "composite",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_composite.png",
+            "sha256": "cd98c96cf059e02459a4950b46891978441d38ae4e25113f64df325134d97e73",
+            "bytes": 194879,
+            "width": 451,
+            "height": 300
+          }
+        ],
+        "scope": "Browser download dimensions, encoding and compositing checks; no ground-truth quality metric."
+      },
+      "screenshot": "artifacts/app_qa/screenshots/pet_default.png"
+    },
+    {
+      "name": "custom_background_color",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "source": "D:\\niko\\ML assigment\\artifacts\\qualitative\\inputs\\chelsea.png",
+        "source_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+        "width": 451,
+        "height": 300,
+        "mask_values": [
+          0,
+          255
+        ],
+        "foreground_fraction": 0.7956762749445676,
+        "replacement_color": [
+          17,
+          34,
+          51
+        ],
+        "files": [
+          {
+            "role": "mask",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_mask.png",
+            "sha256": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+            "bytes": 1055,
+            "width": 451,
+            "height": 300
+          },
+          {
+            "role": "overlay",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_overlay.png",
+            "sha256": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+            "bytes": 192621,
+            "width": 451,
+            "height": 300
+          },
+          {
+            "role": "composite",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_composite.png",
+            "sha256": "839979f92c7f9c9659c296bf5e9a1d56aeee1a7545f76a642e22db89b08cd235",
+            "bytes": 194990,
+            "width": 451,
+            "height": 300
+          }
+        ],
+        "scope": "Browser download dimensions, encoding and compositing checks; no ground-truth quality metric."
+      },
+      "screenshot": "artifacts/app_qa/screenshots/pet_custom_color.png"
+    },
+    {
+      "name": "no_pet_qualitative",
+      "passed": true,
+      "input": {
+        "path": "D:\\niko\\ML assigment\\artifacts\\qualitative\\inputs\\astronaut.png",
+        "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5"
+      },
+      "panels": [
+        {
+          "width": 512,
+          "height": 512,
+          "alt": ""
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "alt": ""
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "alt": ""
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "alt": ""
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "source": "D:\\niko\\ML assigment\\artifacts\\qualitative\\inputs\\astronaut.png",
+        "source_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+        "width": 512,
+        "height": 512,
+        "mask_values": [
+          0,
+          255
+        ],
+        "foreground_fraction": 0.004009246826171875,
+        "replacement_color": [
+          17,
+          34,
+          51
+        ],
+        "files": [
+          {
+            "role": "mask",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_mask.png",
+            "sha256": "6e29cf6aa6bc5ed269f02fb2b8648e2690ed8b7ba8e647e9f3211cf0e060b690",
+            "bytes": 682,
+            "width": 512,
+            "height": 512
+          },
+          {
+            "role": "overlay",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_overlay.png",
+            "sha256": "53384370cea4818ee135645e6f47c0a9f2d0c582e090857d71e0969bc0a106c0",
+            "bytes": 440291,
+            "width": 512,
+            "height": 512
+          },
+          {
+            "role": "composite",
+            "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_composite.png",
+            "sha256": "5447504b1f418ba821f5aa10443ade21460c5df3354b29e001a48e7b8881ad16",
+            "bytes": 5412,
+            "width": 512,
+            "height": 512
+          }
+        ],
+        "scope": "Browser download dimensions, encoding and compositing checks; no ground-truth quality metric."
+      },
+      "screenshot": "artifacts/app_qa/screenshots/no_pet_qualitative.png",
+      "scope": "Qualitative no-pet check only. Output presence is not evidence of pet-absence rejection."
+    },
+    {
+      "name": "invalid_png_content",
+      "passed": true,
+      "screenshot": "artifacts/app_qa/screenshots/invalid_png_content.png"
+    },
+    {
+      "name": "oversize_upload",
+      "passed": true,
+      "bytes": 10485761,
+      "screenshot": "artifacts/app_qa/screenshots/oversize_upload.png"
+    },
+    {
+      "name": "decoded_pixel_limit",
+      "passed": true,
+      "synthetic_invalid_input": true,
+      "dimensions": [
+        5001,
+        4000
+      ],
+      "screenshot": "artifacts/app_qa/screenshots/decoded_pixel_limit.png"
+    },
+    {
+      "name": "missing_artifacts",
+      "passed": true,
+      "expected_error": "Trained checkpoint missing.",
+      "screenshot": "artifacts/app_qa/screenshots/missing_artifacts.png"
+    },
+    {
+      "name": "incompatible_checkpoint",
+      "passed": true,
+      "expected_error": "Incompatible checkpoint;",
+      "screenshot": "artifacts/app_qa/screenshots/incompatible_checkpoint.png"
+    },
+    {
+      "name": "mismatched_decision",
+      "passed": true,
+      "expected_error": "Deployment decision does not match the checkpoint;",
+      "screenshot": "artifacts/app_qa/screenshots/mismatched_decision.png"
+    }
+  ],
+  "downloads": [
+    {
+      "role": "mask",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_mask.png",
+      "sha256": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+      "bytes": 1055,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "overlay",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_overlay.png",
+      "sha256": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+      "bytes": 192621,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "composite",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_default_composite.png",
+      "sha256": "cd98c96cf059e02459a4950b46891978441d38ae4e25113f64df325134d97e73",
+      "bytes": 194879,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "mask",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_mask.png",
+      "sha256": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+      "bytes": 1055,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "overlay",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_overlay.png",
+      "sha256": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+      "bytes": 192621,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "composite",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\pet_custom_color_composite.png",
+      "sha256": "839979f92c7f9c9659c296bf5e9a1d56aeee1a7545f76a642e22db89b08cd235",
+      "bytes": 194990,
+      "width": 451,
+      "height": 300
+    },
+    {
+      "role": "mask",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_mask.png",
+      "sha256": "6e29cf6aa6bc5ed269f02fb2b8648e2690ed8b7ba8e647e9f3211cf0e060b690",
+      "bytes": 682,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "role": "overlay",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_overlay.png",
+      "sha256": "53384370cea4818ee135645e6f47c0a9f2d0c582e090857d71e0969bc0a106c0",
+      "bytes": 440291,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "role": "composite",
+      "file": "D:\\niko\\ML assigment\\artifacts\\app_qa\\downloads\\no_pet_qualitative_composite.png",
+      "sha256": "5447504b1f418ba821f5aa10443ade21460c5df3354b29e001a48e7b8881ad16",
+      "bytes": 5412,
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "browser_errors": [],
+  "automated_passed": true,
+  "passed": true,
+  "visual_review": {
+    "completed": true,
+    "reviewer": "OpenAI Codex agent",
+    "reviewed_at_utc": "2026-10-24T12:50:46.651124+00:00",
+    "method": "All nine full-page screenshots opened and visually inspected with the image viewer after the real Edge run.",
+    "candidate_personal_review": "pending; this record does not claim the candidate performed the review",
+    "screenshots": [
+      {
+        "path": "artifacts/app_qa/screenshots/pet_default.png",
+        "sha256": "5a1314427d4672da1397b9fc7e05ead48c1550b2f2b13f4dcbe4d62b3858f813"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/pet_custom_color.png",
+        "sha256": "6ef4b7c7bb288e3420e2ec08c695cec4e39da992bf0bc34248ac275f7b843914"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/no_pet_qualitative.png",
+        "sha256": "d12eafb5310b813282aafc6e4e4656769ddc1e4110361181db6376642a33e91b"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/invalid_png_content.png",
+        "sha256": "70ced1a27abfc85fffeb629234e51b9e032aacc46cd09664fef7355be6b92b0a"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/oversize_upload.png",
+        "sha256": "59ffb4e938002f43e4fd59944204dfb2e0d70eb34fac504289659cd758df67d8"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/decoded_pixel_limit.png",
+        "sha256": "67850d011b83905e325b8ffd6fdbddcda50cd9d559fa349fb56d89d3e296129f"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/missing_artifacts.png",
+        "sha256": "db6e397b78b94fc81e7c509f092746d42a366b491ade6568a9b57858ab0315c9"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/incompatible_checkpoint.png",
+        "sha256": "425afc664e5c091de1d644942011fe4c6bfbc64ea5b4b918067016b888b81f83"
+      },
+      {
+        "path": "artifacts/app_qa/screenshots/mismatched_decision.png",
+        "sha256": "d88b9d9d5c8e1feeaee6f4d358685cd13d95c0a79f7f8846e1d22ee17811ecdf"
+      }
+    ],
+    "observations": [
+      "Trained C/256 page shows the original, pet mask, overlay and replacement side by side with readable labels and all three download controls.",
+      "Chelsea prediction follows most of the visible cat head. The hard foreground edge does not preserve fine whiskers, and parts of the visible boundary are coarse; this is a qualitative observation without ground-truth scoring.",
+      "The actual color picker changes the background from light blue to #112233; downloaded mask bytes remain identical and composite foreground pixels are preserved.",
+      "The no-pet astronaut image produces small disconnected foreground islands, visibly around upper-image and suit/collar details. Downloaded mask foreground occupies 0.004009246826171875 of pixels. This is one qualitative failure example, not a no-pet benchmark.",
+      "Invalid image bytes and excessive decoded dimensions produce readable red errors without output panels. The oversize file is visibly rejected by the uploader with a red error file entry.",
+      "Missing weights, invalid checkpoint bytes and a decision/checkpoint mismatch each produce an actionable error and preparation guidance with no upload control."
+    ]
+  },
+  "harness_setup_notes": [
+    "A health-only setup probe could not use taskkill inside the workspace sandbox. Its exact Streamlit process tree was verified and stopped with escalation; the full browser QA run needs the same permission. This was a QA harness permission issue and did not test model inference."
+  ],
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+  "input_sources": {
+    "schema_version": 1,
+    "scope": "Two sourced qualitative external inputs. They are not Oxford-IIIT Pet samples or a new benchmark. They will not be used to change model or deployment choices.",
+    "manifest_sha256_checked_for_exact_duplicates": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+    "predictions_status": "pending frozen selected checkpoint and deployment decision",
+    "inputs": [
+      {
+        "repository_version": "scikit-image v0.25.2",
+        "retrieved_date": "2026-10-24",
+        "retrieved_timezone": "Asia/Tbilisi",
+        "input_modifications": "None; original downloaded PNG bytes retained.",
+        "visual_review_by": "OpenAI Codex agent",
+        "candidate_personal_review": "pending",
+        "scope": "Qualitative external-image check only; no segmentation ground truth and no benchmark claim.",
+        "id": "chelsea",
+        "path": "inputs/chelsea.png",
+        "title": "Chelsea the cat",
+        "qualitative_case": "pet photograph",
+        "author": "Stefan van der Walt",
+        "license": "CC0 1.0 Universal, as stated by scikit-image for the photographer",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "license_evidence_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.chelsea",
+        "source_url": "https://github.com/scikit-image/scikit-image/blob/v0.25.2/skimage/data/chelsea.png",
+        "visual_observation": "Close-up photograph of one tabby cat. Both eyes, nose, ears and whiskers are visible; the body extends beyond the frame.",
+        "download_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+        "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+        "decoded_content_sha256": "893732ec8fbb0d4fff97dc78a39524aea2b1bef0f9f0ce91b562f4af8a19dabf",
+        "bytes": 240512,
+        "width": 451,
+        "height": 300,
+        "mode": "RGB",
+        "exact_decoded_content_matches_project_splits": false
+      },
+      {
+        "repository_version": "scikit-image v0.25.2",
+        "retrieved_date": "2026-10-24",
+        "retrieved_timezone": "Asia/Tbilisi",
+        "input_modifications": "None; original downloaded PNG bytes retained.",
+        "visual_review_by": "OpenAI Codex agent",
+        "candidate_personal_review": "pending",
+        "scope": "Qualitative external-image check only; no segmentation ground truth and no benchmark claim.",
+        "id": "astronaut",
+        "path": "inputs/astronaut.png",
+        "title": "Astronaut Eileen Collins",
+        "qualitative_case": "no-pet photograph",
+        "author": "NASA (credited image source); individual photographer not identified in scikit-image provenance",
+        "license": "Public domain according to scikit-image; NASA media-use guidelines apply to educational/informational reuse",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "license_evidence_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html#skimage.data.astronaut",
+        "source_url": "https://github.com/scikit-image/scikit-image/blob/v0.25.2/skimage/data/astronaut.png",
+        "upstream_source_listed_by_distributor": "https://flic.kr/p/r9qvLn",
+        "upstream_source_access_note": "The scikit-image provenance and NASA guidelines were read; the original Flickr link was unavailable to the browsing tool.",
+        "visual_observation": "A person in an orange space suit holds a helmet, with a flag and shuttle model behind her. No cat or dog is visible.",
+        "reuse_note": "Educational project illustration only. Credit NASA for the input photograph; segmentation outputs are produced by this project. No NASA endorsement is implied.",
+        "download_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/astronaut.png",
+        "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+        "decoded_content_sha256": "2f4d170c16264a2a2d30a48190a2bdc35f336021259e438c79092b54018d42aa",
+        "bytes": 791555,
+        "width": 512,
+        "height": 512,
+        "mode": "RGB",
+        "exact_decoded_content_matches_project_splits": false
+      }
+    ]
+  },
+  "finished_at_utc": "2026-10-24T12:47:41.034Z"
+}

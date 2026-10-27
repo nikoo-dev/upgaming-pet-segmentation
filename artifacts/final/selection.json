@@ -1,0 +1,30 @@
+{
+  "selected_experiment": "C",
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "manifest_sha256": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+  "candidates": [
+    {
+      "experiment": "A",
+      "validation_foreground_iou": 0.802834416001103,
+      "checkpoint": "artifacts\\runs\\A\\best.pt",
+      "epochs_completed": 12,
+      "global_step": 6000
+    },
+    {
+      "experiment": "B",
+      "validation_foreground_iou": 0.8877052514913534,
+      "checkpoint": "artifacts\\runs\\B\\best.pt",
+      "epochs_completed": 12,
+      "global_step": 6000
+    },
+    {
+      "experiment": "C",
+      "validation_foreground_iou": 0.8883932957906522,
+      "checkpoint": "artifacts\\runs\\C\\best.pt",
+      "epochs_completed": 12,
+      "global_step": 6000
+    }
+  ],
+  "initial_model_sha256": "42a610ee0897a8d31e991ed8f915d8f8404c527b9332c15b70b0665fd5f35165",
+  "selection": "maximum validation foreground IoU; ties A, B, C"
+}

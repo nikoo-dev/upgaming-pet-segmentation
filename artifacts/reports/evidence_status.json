@@ -1,0 +1,7 @@
+{
+  "experiment_A": true,
+  "experiment_B": true,
+  "experiment_C": true,
+  "optimization": true,
+  "test_evaluation": true
+}

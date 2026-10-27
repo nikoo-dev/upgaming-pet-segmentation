@@ -1,0 +1,27 @@
+{
+  "foreground_iou": 0.9397489165049655,
+  "background_iou": 0.9683308881601528,
+  "mean_iou": 0.9540399023325592,
+  "foreground_dice": 0.9689387203764522,
+  "pixel_accuracy": 0.9788017570463632,
+  "confusion_matrix": [
+    [
+      372719605,
+      6828708
+    ],
+    [
+      5361029,
+      190125911
+    ]
+  ],
+  "images": 3669,
+  "input_resolution": 256,
+  "valid_pixels": 575035253,
+  "ignored_pixels": 79778469,
+  "total_pixels": 654813722,
+  "split": "test",
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "manifest_sha256": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+  "boundary_policy": "raw label 3 ignored",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c"
+}

@@ -1,0 +1,5 @@
+# Matched pair from https://pytorch.org/get-started/previous-versions/
+# Install these first using the CPU index, then install -e ".[dev]".
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1
+torchvision==0.24.1

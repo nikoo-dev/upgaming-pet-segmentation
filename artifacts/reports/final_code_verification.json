@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-24T12:53:29.684932+00:00",
+  "scope": "Final code, dependency, compilation and offline wheel verification; no training, selection, benchmark or held-out evaluation was rerun.",
+  "checks": [
+    {
+      "name": "offline_correctness_tests",
+      "command": [
+        "D:\\niko\\ML assigment\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "D:\\niko\\ML assigment",
+      "exit_code": 0,
+      "stdout": "................................................                         [100%]\n48 passed in 32.75s\n",
+      "stderr": "",
+      "elapsed_seconds": 43.852005399996415
+    },
+    {
+      "name": "installed_dependency_consistency",
+      "command": [
+        "D:\\niko\\ML assigment\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "D:\\niko\\ML assigment",
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": "",
+      "elapsed_seconds": 2.7667802999494597
+    },
+    {
+      "name": "python_compilation",
+      "command": [
+        "D:\\niko\\ML assigment\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "petseg",
+        "tests",
+        "scripts",
+        "app.py"
+      ],
+      "cwd": "D:\\niko\\ML assigment",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.19978819997049868
+    },
+    {
+      "name": "offline_final_wheel",
+      "command": [
+        "C:/Users/nika/.local/bin/uv.exe",
+        "build",
+        "--offline",
+        "--wheel",
+        "--out-dir",
+        "artifacts/dist",
+        "--cache-dir",
+        ".uv-cache"
+      ],
+      "cwd": "D:\\niko\\ML assigment",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: The cache directory `.uv-cache` is inside the build source directory `.` and may be included in distributions\nBuilding wheel...\nrunning egg_info\nwriting upgaming_petseg.egg-info\\PKG-INFO\nwriting dependency_links to upgaming_petseg.egg-info\\dependency_links.txt\nwriting entry points to upgaming_petseg.egg-info\\entry_points.txt\nwriting requirements to upgaming_petseg.egg-info\\requires.txt\nwriting top-level names to upgaming_petseg.egg-info\\top_level.txt\nreading manifest file 'upgaming_petseg.egg-info\\SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwarning: no previously-included files matching '*.pyc' found anywhere in distribution\nno previously-included directories found matching 'data'\nno previously-included directories found matching 'artifacts'\nno previously-included directories found matching '.venv'\nno previously-included directories found matching '.verify-venv'\nno previously-included directories found matching '.uv-cache'\nwriting manifest file 'upgaming_petseg.egg-info\\SOURCES.txt'\nrunning bdist_wheel\nrunning build\nrunning build_py\ncreating build\\lib\\petseg\ncopying petseg\\benchmark.py -> build\\lib\\petseg\ncopying petseg\\cli.py -> build\\lib\\petseg\ncopying petseg\\data.py -> build\\lib\\petseg\ncopying petseg\\evaluate.py -> build\\lib\\petseg\ncopying petseg\\inference.py -> build\\lib\\petseg\ncopying petseg\\metrics.py -> build\\lib\\petseg\ncopying petseg\\model.py -> build\\lib\\petseg\ncopying petseg\\report.py -> build\\lib\\petseg\ncopying petseg\\train.py -> build\\lib\\petseg\ncopying petseg\\transforms.py -> build\\lib\\petseg\ncopying petseg\\utils.py -> build\\lib\\petseg\ncopying petseg\\visualize.py -> build\\lib\\petseg\ncopying petseg\\__init__.py -> build\\lib\\petseg\ncopying petseg\\__main__.py -> build\\lib\\petseg\nrunning egg_info\nwriting upgaming_petseg.egg-info\\PKG-INFO\nwriting dependency_links to upgaming_petseg.egg-info\\dependency_links.txt\nwriting entry points to upgaming_petseg.egg-info\\entry_points.txt\nwriting requirements to upgaming_petseg.egg-info\\requires.txt\nwriting top-level names to upgaming_petseg.egg-info\\top_level.txt\nreading manifest file 'upgaming_petseg.egg-info\\SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwarning: no previously-included files matching '*.pyc' found anywhere in distribution\nno previously-included directories found matching 'data'\nno previously-included directories found matching 'artifacts'\nno previously-included directories found matching '.venv'\nno previously-included directories found matching '.verify-venv'\nno previously-included directories found matching '.uv-cache'\nwriting manifest file 'upgaming_petseg.egg-info\\SOURCES.txt'\ninstalling to build\\bdist.win-amd64\\wheel\nrunning install\nrunning install_lib\ncreating build\\bdist.win-amd64\\wheel\ncreating build\\bdist.win-amd64\\wheel\\petseg\ncopying build\\lib\\petseg\\benchmark.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\cli.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\data.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\evaluate.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\inference.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\metrics.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\model.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\report.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\train.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\transforms.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\utils.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\visualize.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\__init__.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\ncopying build\\lib\\petseg\\__main__.py -> build\\bdist.win-amd64\\wheel\\.\\petseg\nrunning install_egg_info\nCopying upgaming_petseg.egg-info to build\\bdist.win-amd64\\wheel\\.\\upgaming_petseg-0.1.0-py3.12.egg-info\nrunning install_scripts\ncreating build\\bdist.win-amd64\\wheel\\upgaming_petseg-0.1.0.dist-info\\WHEEL\ncreating 'D:\\\\niko\\\\ML assigment\\\\artifacts\\\\dist\\\\.tmp-u53zqza7\\\\upgaming_petseg-0.1.0-py3-none-any.whl' and adding 'build\\\\bdist.win-amd64\\\\wheel' to it\nadding 'petseg/__init__.py'\nadding 'petseg/__main__.py'\nadding 'petseg/benchmark.py'\nadding 'petseg/cli.py'\nadding 'petseg/data.py'\nadding 'petseg/evaluate.py'\nadding 'petseg/inference.py'\nadding 'petseg/metrics.py'\nadding 'petseg/model.py'\nadding 'petseg/report.py'\nadding 'petseg/train.py'\nadding 'petseg/transforms.py'\nadding 'petseg/utils.py'\nadding 'petseg/visualize.py'\nadding 'upgaming_petseg-0.1.0.dist-info/METADATA'\nadding 'upgaming_petseg-0.1.0.dist-info/WHEEL'\nadding 'upgaming_petseg-0.1.0.dist-info/entry_points.txt'\nadding 'upgaming_petseg-0.1.0.dist-info/top_level.txt'\nadding 'upgaming_petseg-0.1.0.dist-info/RECORD'\nremoving build\\bdist.win-amd64\\wheel\nSuccessfully built artifacts\\dist\\upgaming_petseg-0.1.0-py3-none-any.whl\n",
+      "elapsed_seconds": 8.399056099937297
+    }
+  ],
+  "passed": true,
+  "finished_at_utc": "2026-10-24T12:54:24.908113+00:00",
+  "built_wheels": [
+    {
+      "path": "artifacts/dist/upgaming_petseg-0.1.0-py3-none-any.whl",
+      "bytes": 27325,
+      "sha256": "82d10c200f1f7750831dce81f6e7a232f7a342797693c7a7e19aa7aa519caef9"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rule": "ascending (foreground_iou, id); indices 0, n//2, n-1; undefined omitted",
+  "examples": [
+    [
+      "worst",
+      {
+        "id": "Egyptian_Mau_20",
+        "breed": 12,
+        "species": 1,
+        "foreground_iou": 0.0
+      }
+    ],
+    [
+      "median",
+      {
+        "id": "Abyssinian_33",
+        "breed": 1,
+        "species": 1,
+        "foreground_iou": 0.9759937544727083
+      }
+    ],
+    [
+      "best",
+      {
+        "id": "scottish_terrier_78",
+        "breed": 31,
+        "species": 2,
+        "foreground_iou": 1.0
+      }
+    ]
+  ]
+}

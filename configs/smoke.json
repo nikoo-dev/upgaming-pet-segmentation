@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "size": 256,
+  "batch_size": 2,
+  "epochs": 1,
+  "patience": 3,
+  "min_epochs": 1,
+  "head_lr": 0.001,
+  "backbone_lr": 0.0001,
+  "weight_decay": 0.0001,
+  "workers": 0,
+  "train_cap": 8,
+  "max_steps": 4,
+  "val_limit": 2,
+  "pretrained": true,
+  "experiment": "diagnostic",
+  "frozen": false,
+  "augment": false
+}

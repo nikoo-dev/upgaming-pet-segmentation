@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "diagnostic": false,
+  "epochs_completed": 12,
+  "global_step": 6000,
+  "best_validation_foreground_iou": 0.802834416001103,
+  "best_checkpoint_sha256": "bcb2a11fbf6a5457154396e045f7a3a4e5ee0b3fb5e48b494c46440a61ac9bfc",
+  "latest_checkpoint_sha256": "7ec8d4b8c020db2ebdcc69fe3410e52690c6fd6aa086a9349f55e9b43cc6301a"
+}

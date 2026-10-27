@@ -1,0 +1,32 @@
+[
+  {
+    "experiment": "A",
+    "best_epoch_1based": 10,
+    "best_validation_foreground_iou": 0.802834416001103,
+    "first_epoch_loss": 0.2107483999987081,
+    "last_epoch_loss": 0.06901259202884637,
+    "epochs": 12,
+    "global_step": 6000,
+    "elapsed_seconds": 2209.2381165000843
+  },
+  {
+    "experiment": "B",
+    "best_epoch_1based": 12,
+    "best_validation_foreground_iou": 0.8877052514913534,
+    "first_epoch_loss": 0.20208794159254667,
+    "last_epoch_loss": 0.01892256851503592,
+    "epochs": 12,
+    "global_step": 6000,
+    "elapsed_seconds": 4042.996235699975
+  },
+  {
+    "experiment": "C",
+    "best_epoch_1based": 12,
+    "best_validation_foreground_iou": 0.8883932957906522,
+    "first_epoch_loss": 0.20224532392260247,
+    "last_epoch_loss": 0.029531449892068087,
+    "epochs": 12,
+    "global_step": 6000,
+    "elapsed_seconds": 4137.32885540009
+  }
+]

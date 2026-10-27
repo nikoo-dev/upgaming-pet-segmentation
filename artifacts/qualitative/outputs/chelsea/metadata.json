@@ -1,0 +1,12 @@
+{
+  "experiment": "C",
+  "input_resolution": 256,
+  "epoch": 11,
+  "global_step": 6000,
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "width": 451,
+  "height": 300,
+  "diagnostic": false,
+  "resolution_source": "frozen deployment decision",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c"
+}

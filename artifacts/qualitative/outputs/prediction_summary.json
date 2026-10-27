@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+  "scope": "Two qualitative cases, no pixel ground truth or benchmark scores; no tuning after inspection.",
+  "predictions": [
+    {
+      "id": "chelsea",
+      "output_directory": "outputs/chelsea",
+      "metadata_path": "outputs/chelsea/metadata.json",
+      "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+      "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+      "input_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "input_resolution": 256,
+      "output_width": 451,
+      "output_height": 300,
+      "total_pixels": 135300,
+      "predicted_foreground_pixels": 107655,
+      "predicted_foreground_fraction": 0.7956762749445676,
+      "foreground_fraction_scope": "Mask occupancy only, not IoU, accuracy, confidence or a benchmark result.",
+      "visual_observation": "The mask retains the central face and most of the visible head. The composite replaces the surrounding background, but the smooth binary contour removes thin whiskers extending to the right; it is not a detailed fur or transparency matte.",
+      "visual_review_by": "OpenAI Codex agent",
+      "candidate_personal_review": "pending",
+      "output_sha256": {
+        "mask.png": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+        "overlay.png": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+        "composite.png": "cd98c96cf059e02459a4950b46891978441d38ae4e25113f64df325134d97e73",
+        "metadata.json": "50f94585789acf99e4d53958ddf6f3193d2a47def128d7789a492338058fce09"
+      }
+    },
+    {
+      "id": "astronaut",
+      "output_directory": "outputs/astronaut",
+      "metadata_path": "outputs/astronaut/metadata.json",
+      "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+      "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+      "input_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+      "input_resolution": 256,
+      "output_width": 512,
+      "output_height": 512,
+      "total_pixels": 262144,
+      "predicted_foreground_pixels": 1051,
+      "predicted_foreground_fraction": 0.004009246826171875,
+      "foreground_fraction_scope": "Mask occupancy only, not IoU, accuracy, confidence or a benchmark result.",
+      "visual_observation": "The no-pet image produces small disconnected false-foreground patches on the hair, suit collar, background shuttle area and lower edge. The composite retains those isolated fragments. This demonstrates a false-positive case rather than reliable pet-absence rejection.",
+      "visual_review_by": "OpenAI Codex agent",
+      "candidate_personal_review": "pending",
+      "output_sha256": {
+        "mask.png": "6e29cf6aa6bc5ed269f02fb2b8648e2690ed8b7ba8e647e9f3211cf0e060b690",
+        "overlay.png": "53384370cea4818ee135645e6f47c0a9f2d0c582e090857d71e0969bc0a106c0",
+        "composite.png": "22d8631ffce72ae4a0e4021c70d97e866f7a29509a1186de42192036131d6534",
+        "metadata.json": "133063b898e9cc979a432bef1a319bdddb50b6acc5ac72d8d5db25f58ed65690"
+      }
+    }
+  ]
+}

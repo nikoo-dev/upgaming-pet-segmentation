@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "input_resolution": 256,
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "manifest_sha256": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+  "metrics_sha256": "7e22beebc3f8344a0e396350e49953e3befda75ea82bfe64b3dbac77120eb36d",
+  "per_image_csv_sha256": "3f93e25461f1bfb03dc0562a138985f47e5e9cccecbbbdd809501eb4309e5dd3",
+  "selection_rule": "ascending (saved foreground IoU, image ID), undefined omitted; first six, index n//2, last",
+  "boundary_policy": "Raw trimap label 3 ignored in saved IoUs and shown yellow in targets",
+  "scope": "Qualitative examples selected by the saved test ranking; no subgroup metrics or tuning",
+  "examples": [
+    {
+      "role": "worst_1",
+      "id": "Egyptian_Mau_20",
+      "saved_foreground_iou": 0.0,
+      "breed": 12,
+      "species": 1
+    },
+    {
+      "role": "worst_2",
+      "id": "Maine_Coon_268",
+      "saved_foreground_iou": 0.0,
+      "breed": 21,
+      "species": 1
+    },
+    {
+      "role": "worst_3",
+      "id": "Persian_259",
+      "saved_foreground_iou": 0.0,
+      "breed": 24,
+      "species": 1
+    },
+    {
+      "role": "worst_4",
+      "id": "Persian_268",
+      "saved_foreground_iou": 0.0,
+      "breed": 24,
+      "species": 1
+    },
+    {
+      "role": "worst_5",
+      "id": "Persian_273",
+      "saved_foreground_iou": 0.0,
+      "breed": 24,
+      "species": 1
+    },
+    {
+      "role": "worst_6",
+      "id": "japanese_chin_199",
+      "saved_foreground_iou": 0.0,
+      "breed": 18,
+      "species": 2
+    },
+    {
+      "role": "upper_median",
+      "id": "Abyssinian_33",
+      "saved_foreground_iou": 0.9759937544727083,
+      "breed": 1,
+      "species": 1
+    },
+    {
+      "role": "best",
+      "id": "scottish_terrier_78",
+      "saved_foreground_iou": 1.0,
+      "breed": 31,
+      "species": 2
+    }
+  ]
+}

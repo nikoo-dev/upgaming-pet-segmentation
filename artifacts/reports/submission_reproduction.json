@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "archive": "D:\\niko\\ML assigment\\artifacts\\review\\upgaming-petseg-candidate.zip",
+  "archive_sha256": "0337c6b66d10a50bf050eb92867467a6976be34f02979372215c14db45bf3e92",
+  "archive_bytes": 214854697,
+  "extraction_directory": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check",
+  "scope": "Archive integrity and relocation; no training, selection, benchmark or official test rerun",
+  "checks": [
+    {
+      "name": "extracted_source_import",
+      "command": [
+        "D:\\niko\\ML assigment\\.verify-venv\\Scripts\\python.exe",
+        "-c",
+        "from pathlib import Path; import petseg; p=Path(petseg.__file__).resolve(); assert p.parent == Path.cwd()/'petseg'; print(p)"
+      ],
+      "cwd": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check",
+      "exit_code": 0,
+      "stdout": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check\\petseg\\__init__.py\n",
+      "stderr": "",
+      "elapsed_seconds": 0.2840332000050694
+    },
+    {
+      "name": "complete_extracted_source_test_suite",
+      "command": [
+        "D:\\niko\\ML assigment\\.verify-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check",
+      "exit_code": 0,
+      "stdout": "................................................                         [100%]\n48 passed in 18.77s\n",
+      "stderr": "",
+      "elapsed_seconds": 25.968216199980816
+    },
+    {
+      "name": "relocated_report",
+      "command": [
+        "D:\\niko\\ML assigment\\.verify-venv\\Scripts\\python.exe",
+        "-m",
+        "petseg",
+        "report"
+      ],
+      "cwd": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check",
+      "exit_code": 0,
+      "stdout": "{\n  \"experiment_A\": true,\n  \"experiment_B\": true,\n  \"experiment_C\": true,\n  \"optimization\": true,\n  \"test_evaluation\": true\n}\n",
+      "stderr": "",
+      "elapsed_seconds": 8.292629600007785
+    },
+    {
+      "name": "relocated_frozen_prediction",
+      "command": [
+        "D:\\niko\\ML assigment\\.verify-venv\\Scripts\\python.exe",
+        "-m",
+        "petseg",
+        "predict",
+        "artifacts/qualitative/inputs/chelsea.png",
+        "--output",
+        "artifacts/reproduction_prediction"
+      ],
+      "cwd": "D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check",
+      "exit_code": 0,
+      "stdout": "Saved outputs to D:\\niko\\ML assigment\\artifacts\\review\\submission-extracted-check\\artifacts\\reproduction_prediction\n",
+      "stderr": "",
+      "elapsed_seconds": 6.113383099989733
+    }
+  ],
+  "passed": true,
+  "inventory_files_verified": 182,
+  "checkpoint_payloads": 7,
+  "tested_source_hashes": {
+    ".gitignore": "eea88a641cea1ad8b41bb3b78ebfa596de021aeb5294a99c0fb7e70f836231c6",
+    ".streamlit/config.toml": "9e7c92d1ccefc1711937697158de64a3bce17ef5ade4c97d077136bb29d74e79",
+    "MANIFEST.in": "ec47eb20cd616c7616f46558275ce25df4be99586251d63224368eca69931ec2",
+    "app.py": "0996fee37aacb62e788e399f5e8dba0241264070c4610bd368cfdd8aa88d437a",
+    "configs/A.json": "822fbafbf61ce1f14adcd1f439e0efb67fd8269ee2621107c17132e4727ffa2e",
+    "configs/B.json": "7cad9df6cfdc86b1de7a5afe04c2ef748cff5d36ccee8609f0a6a158cee629a3",
+    "configs/C.json": "779063ccf347b3dee2e1481e1098e7badb6f18da4178ea66420e30fabb1a3180",
+    "configs/cpu_A.json": "8d3e26062de9731b03d2112d7cbaf1f9264e0dfa8fdf36cee5b7f129b3454b29",
+    "configs/cpu_B.json": "d620d3dcb5edb0aec84f83f2523f448ca2046fc4b7528d8c0327fade6a32790f",
+    "configs/cpu_C.json": "3804841ba482646cbbc6e797365e9c6709d02d37c47bf56144f8fe7e64651ce1",
+    "configs/overfit.json": "afabe55949cd500466b69c0a4ec8a55b03ac18738830e4db51a75334b6072a30",
+    "configs/smoke.json": "5ab479fd301791c2e0d4107d2885f57f30f3c3a7aaff9e58817e419e541ef2dd",
+    "notebooks/train_colab.ipynb": "0e2d329a565f1da679d30d3d00b89feda01434e59fb441085201bd58968cab3b",
+    "petseg/__init__.py": "eab2ead70533ed7c301437d277e4fc4847d45a4fb183cef45e4661a0cc9fd590",
+    "petseg/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "petseg/benchmark.py": "338240c55535ada0082d4e89a1035f2c5e21be8e13e1a12b0c9dbdb462759b3d",
+    "petseg/cli.py": "295346f105aa24652ad476d3fa0fee8d3bc1c8daea089976b5ed2b0010df7a6a",
+    "petseg/data.py": "fd8c3acf18b7b7f2cf5a8d22fac1962a60d62d9f9b5475eed2af67950d37df7a",
+    "petseg/evaluate.py": "7650d5478350e93de765053f4f33890cdd74aac9c69bf487c46435679075fead",
+    "petseg/inference.py": "ef7b9ba28011aa4582853930bac7a5f49c9bb0bebbbf1c5c72b995b37b4948b2",
+    "petseg/metrics.py": "f531b9e18327443a99157264b655002737f149345e3f5ec1b8554e28b831a2f5",
+    "petseg/model.py": "2775f6c42a0de1cd2f21dd5930cbace621a5fae54051f37956edb2666f710da1",
+    "petseg/report.py": "c33dd3f8086023ff54aa8c54171a3ad0d078e66107c685fec25b7862f68a44cd",
+    "petseg/train.py": "35747c4c97e8a25e45131b15814d2b6d5330f12635bf14bc37afa6fa9bf47e8c",
+    "petseg/transforms.py": "ce60069eb74c8c505dbdc5c4e13081eb75fa836d4df0799908fc862c9ad4c47d",
+    "petseg/utils.py": "d5341bf4735fae92e489994a71b74eebbf8ba259ea3f7372a603c0a6159834d6",
+    "petseg/visualize.py": "d704ff2e4f2247e4a8226698db0f37889a69699f617be815c32c469c16d6d54b",
+    "pyproject.toml": "3d2975cb09df747f3f71189cb5fa5cdb09134a3ca0a48e308803557ed2f7f43f",
+    "requirements-cpu.txt": "a7d5e4e5ecbb5658570467bd4694eb946b4d9337e5dbd9643d6bb3d6f844e5b5",
+    "requirements-local-lock.txt": "eaed81c72fc1d7b36cb026c4c73b01fa661ae23be77151b6f8ac09ebffb65bbc",
+    "scripts/diagnostic_subset.py": "ab9e767ca27d8d0b6e3652a7149e2345baa478c8b478154c402753080ac55b8c",
+    "scripts/error_examples.py": "a514a347075501497437a7f319afabafb4a79396b2cdcb916a91e154656240f9",
+    "scripts/package_source.py": "5eb319cea1b85a8767304c5aa27d40985e7b3c22e1cecf3fad5c7140be8f3603",
+    "scripts/package_submission.py": "60a02c71e40458568871b29a40a72e71c2f57caf5bc8a4d9b884f194c80632aa",
+    "tests/conftest.py": "c04180022d8794007e2e56dd2823925d6d71fe6fc8417f16a91375858155b90e",
+    "tests/test_app_policy.py": "7a8b4e2625ce1f945861c41b02532c97652848ba69ba5d4c6385e8f7e0695a8d",
+    "tests/test_benchmark_protocol.py": "9b3fc17a197be1002e34588538115b96140b68f95475c7519fb0a3b97164240c",
+    "tests/test_cli_prediction.py": "b29ff42a3ee4bcfb5977614bcdaa6a5e01d8b98d5ffe1f3b486a35a0215b2c48",
+    "tests/test_data_metrics.py": "30d1f45ed0fc5e1c82fd2f118494598dfdc24a939ed58e1e9788d04d4cd9c893",
+    "tests/test_evaluation_provenance.py": "dec1cc77adfc72783c6016666a1c7b6a689aa98022f3223173d46a0b8bb38622",
+    "tests/test_report.py": "5e687de2cedae0d6185311acf94fae8c67e5053164067a0701cef12d64d4b5c4",
+    "tests/test_selection.py": "6c8099fccbd6a8ac6153ec47df163483afefd94845d1057b5a6c1d1b5a78e56b",
+    "tests/test_submission_packaging.py": "09c1f0062bfb0caa07ce057a015b7b6d2b1176d833ecc18f149d2842903d2e3d",
+    "tests/test_training_inference.py": "13bf0d37ddad3f49a0fe293287b9d42a8a6118f98674c4f296d72938f4809085"
+  },
+  "all_extracted_bytes_verified": true,
+  "source_token_scan": "No common private-key, GitHub-token or AWS-access-key signature matched",
+  "notebook_code_cells_compiled": 7,
+  "prediction_hashes": {
+    "mask.png": "b9573ef6aa05cc218c4d435c1a6974164142a55c328e887f176b54b53e1ad6f4",
+    "overlay.png": "d79047940423de597768172f2c7ca4a8c870ae35e72c494b1418ce6ca062b84e",
+    "composite.png": "cd98c96cf059e02459a4950b46891978441d38ae4e25113f64df325134d97e73",
+    "metadata.json": "50f94585789acf99e4d53958ddf6f3193d2a47def128d7789a492338058fce09"
+  },
+  "report_byte_identical": true,
+  "frozen_prediction_byte_identical": true,
+  "freeze_hashes_preserved": true
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-24T12:45:14.153239+00:00",
+  "frozen_at_tbilisi": "2026-10-24T16:45:14.153239+04:00",
+  "timezone": "Asia/Tbilisi",
+  "checkpoint_sha256": "9a4a8d23e09c29479a6969a9f4fba4533c7998da71b35b82576a07e86ed4ce16",
+  "manifest_sha256": "cfd32d2dd01ea46fdc53b1aeeb1851e204bc78c3ae3f9707aa82411c4f9b74f1",
+  "decision_sha256": "db611c75e96f5dd20195aba19663e8345edfde7375e235839ae1dc4db8b7b07c",
+  "selection_sha256": "396d74263d1387470450de1c40740715626b970b6f39c98d012c116b943e8519",
+  "execution_protocol_sha256": "9e362c8cb90aba1b0c30cc73154ee9dcfc40d7b35f37669687032ee5f398db9f",
+  "selected_experiment": "C",
+  "baseline_resolution": 256,
+  "deployment_resolution": 256,
+  "test_resolutions": [
+    256
+  ],
+  "benchmark_outcome": "No smaller input met the predeclared 0.02 validation foreground IoU loss limit; retain256",
+  "test_policy": "No training, model selection or deployment tuning after this freeze; only final evaluation and descriptive analysis"
+}

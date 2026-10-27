@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "best_epoch_1based": 10,
+  "best_validation_foreground_iou": 0.802834416001103,
+  "epochs_completed": 12,
+  "global_step": 6000,
+  "elapsed_seconds": 2209.2381165000843
+}

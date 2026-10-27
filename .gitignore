@@ -1,0 +1,15 @@
+.venv/
+.verify-venv/
+.repro-check/
+build/
+dist/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/
+artifacts/
+*.pt
+*.pth
+.ipynb_checkpoints/
+.streamlit/secrets.toml
